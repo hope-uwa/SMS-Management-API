@@ -19,8 +19,9 @@ An simple application for managing small message services
 ## Documentation
 
 The end points for this app are documented on swagger 
-Run this url `localhost:3000/docs/api/#/` on your browser after you set-up and start the app 
-* Add `BASE_URL=localhost:3000` to your .env file when running the swagger documentation
+Run this url `[netloc][:port]/docs/api/` on your browser when running the app 
+* For localhost the url should look like localhost:3000/docs/api/
+* Add `BASE_URL=localhost:3000` to your .env file on localhost
 
 ## Setup
 
@@ -60,7 +61,8 @@ Follow these steps to set up the project in development mode
 - Create a database in `PostgreSQL` and name it `travel_tool`
 - Set the following environment variables in `.env`:
 
-  - `DATABASE_URL` - ostgres://{username}:@localhost:{port}/{database name}
+  - `DATABASE_URL` - postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]
+
  
 
 - Run database migrations
