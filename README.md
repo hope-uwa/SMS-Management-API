@@ -18,7 +18,7 @@ An simple application for managing small message services
 
 ## Documentation
 
-The end points for this app is documented on swagger 
+The end points for this app are documented on swagger 
 Run this url `localhost:3000/docs/api/#/` on your browser after you set-up and start the app 
 * Add `BASE_URL=localhost:3000` to your .env file when running the swagger documentation
 
